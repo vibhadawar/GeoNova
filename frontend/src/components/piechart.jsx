@@ -24,9 +24,7 @@ function PieChartComponent({ stats }) {
   ];
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-6">
-      <h2 className="text-2xl font-bold mb-4">
-        Land Cover Distribution
+<div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8"><h2 className="text-2xl font-bold text-black dark:text-white mb-6">        Land Cover Distribution
       </h2>
 
       <PieChart width={400} height={300}>

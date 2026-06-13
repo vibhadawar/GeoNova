@@ -42,10 +42,13 @@ const features = [
 
 function Features() {
   return (
-    <section id="features" className="py-24 bg-slate-50">
+    <section
+      id="features"
+      className="py-24 bg-slate-50 dark:bg-gray-900"
+    >
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center mb-12 text-black dark:text-white">
           Powerful Features
         </h2>
 
@@ -57,15 +60,31 @@ function Features() {
             return (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow-lg hover:-translate-y-2 transition"
+                className="
+                  bg-white
+                  dark:bg-gray-800
+                  p-8
+                  rounded-2xl
+                  shadow-lg
+                  transition-all
+                  duration-300
+                  hover:-translate-y-3
+                  hover:shadow-2xl
+                  cursor-pointer
+                "
               >
-                <Icon size={40} />
+                <div className="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+                  <Icon
+                    size={32}
+                    className="text-green-600 dark:text-green-400"
+                  />
+                </div>
 
-                <h3 className="text-xl font-semibold mt-4">
+                <h3 className="text-xl font-bold mt-5 text-black dark:text-white">
                   {feature.title}
                 </h3>
 
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
                   {feature.desc}
                 </p>
               </div>

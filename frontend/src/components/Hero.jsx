@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="bg-slate-950 text-white py-24 px-6"
+      className="bg-slate-950 dark:bg-black text-white py-24 px-6"
     >
       <div className="max-w-6xl mx-auto text-center">
 
@@ -17,13 +17,36 @@ function Hero() {
         </p>
 
         <div className="flex justify-center gap-4">
-          <button className="bg-green-500 px-6 py-3 rounded-lg">
+
+          <button
+            className="
+            bg-green-500
+            hover:bg-green-600
+            px-6 py-3
+            rounded-lg
+            transition
+            duration-300
+            hover:scale-105
+            shadow-lg
+            "
+          >
             Analyze Image
           </button>
 
-          <button className="border border-white px-6 py-3 rounded-lg">
+          <button
+            className="
+            border border-white
+            px-6 py-3
+            rounded-lg
+            transition
+            duration-300
+            hover:bg-white
+            hover:text-black
+            "
+          >
             Learn More
           </button>
+
         </div>
 
       </div>
