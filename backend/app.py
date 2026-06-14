@@ -275,10 +275,29 @@ async def segment(file: UploadFile = File(...)):
     green_mask = cv2.inRange(hsv, lower_green, upper_green)
     blue_mask = cv2.inRange(hsv, lower_blue, upper_blue)
     gray_mask = cv2.inRange(hsv, lower_gray, upper_gray)
+    print("Saving images...")
 
     cv2.imwrite("outputs/vegetation_mask.jpg", green_mask)
     cv2.imwrite("outputs/water_mask.jpg", blue_mask)
     cv2.imwrite("outputs/urban_mask.jpg", gray_mask)
+
+    segmented = np.zeros_like(img)
+
+    segmented[green_mask > 0] = [0,255,0]
+    segmented[blue_mask > 0] = [255,0,0]
+    segmented[gray_mask > 0] = [128,128,128]
+
+    cv2.imwrite("outputs/segment.jpg", segmented)
+
+    print("Images saved successfully")
+    segmented = np.zeros_like(img) 
+    segmented[green_mask > 0] = [0, 255, 0] # Green 
+    segmented[blue_mask > 0] = [255, 0, 0] # Blue
+    segmented[gray_mask > 0] = [128, 128, 128] # Gray 
+    
+    cv2.imwrite("outputs/segment.jpg", segmented)
+    
+   
 
     total_pixels = img.shape[0] * img.shape[1]
 
@@ -308,7 +327,10 @@ async def segment(file: UploadFile = File(...)):
         "water_percent": water_percent,
         "urban_percent": urban_percent,
         "report": report,
-        "segmented_image": "outputs/segment.jpg"
+        "segmented_image": "http://localhost:8000/outputs/segment.jpg",
+          "vegetation_mask": "http://localhost:8000/outputs/vegetation_mask.jpg",
+"water_mask": "http://localhost:8000/outputs/water_mask.jpg",
+"urban_mask": "http://localhost:8000/outputs/urban_mask.jpg"
 
     }
 

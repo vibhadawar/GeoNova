@@ -48,10 +48,17 @@ function UploadBox({
 
       // Generated images
       setImages({
-        segment: response.data.segment_image,
-        vegetation: response.data.vegetation_image,
-        water: response.data.water_image,
-        urban: response.data.urban_image,
+         segment:
+    response.data.segmented_image + "?" + Date.now(),
+
+  vegetation:
+    response.data.vegetation_mask + "?" + Date.now(),
+
+  water:
+    response.data.water_mask + "?" + Date.now(),
+
+  urban:
+    response.data.urban_mask + "?" + Date.now(),
       });
 
     } catch (error) {

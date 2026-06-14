@@ -72,16 +72,23 @@ function Dashboard() {
 <div className="mt-8">
   <TimeSeriesChart />
 </div>
-<div className="mt-8">
-  <MapView />
-</div>
-<div className="mt-8">
-  <DownloadReport />
-</div>
+
+
 <div className="mt-8">
   <CaptionCard stats={stats} />
 </div>
-      </div>
+     
+      <div className="mt-8">
+  <MapView />
+</div>
+
+<div className="mt-8">
+  <DownloadReport
+    stats={stats}
+    report={report}
+  />
+</div>
+ </div>
     </section>
   );
 }
