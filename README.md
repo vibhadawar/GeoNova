@@ -119,9 +119,9 @@ EarthObservationSystemm
 
 ---
 
-## ⚙ Installation
+## Installation
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/GeoSenseAI.git
@@ -211,7 +211,7 @@ http://localhost:8000/docs
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Login Page
 <img width="900" height="652" alt="Screenshot 2026-06-14 181409" src="https://github.com/user-attachments/assets/6560c56f-c818-4dc5-bb9c-8d724740312e" />
@@ -233,7 +233,7 @@ http://localhost:8000/docs
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - Deep learning segmentation (U-Net)
 - NDVI analysis
@@ -244,7 +244,7 @@ http://localhost:8000/docs
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Developed by Vibha
 
