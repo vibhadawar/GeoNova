@@ -5,7 +5,7 @@ function Footer() {
       <div className="text-center">
 
         <h2 className="text-2xl font-bold text-green-500">
-          GeoSense AI
+          GeoNova
         </h2>
 
         <p className="mt-2 text-gray-600 dark:text-gray-300">
