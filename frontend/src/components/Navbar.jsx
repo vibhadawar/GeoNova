@@ -21,7 +21,7 @@ function Navbar({ darkMode, setDarkMode }) {
 
         {/* Logo */}
         <h1 className="text-2xl font-bold text-green-500 cursor-pointer hover:scale-105 transition">
-          GeoSense AI
+          GeoNova
         </h1>
 
         {/* Desktop Links */}
