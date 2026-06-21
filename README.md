@@ -1,10 +1,10 @@
-#  GeoSense AI
+#  GeoNova
 
 AI-powered satellite image analysis and environmental monitoring system built using React, FastAPI, OpenCV, and Firebase Authentication.
 
 #  Overview
 
-GeoSense AI is an intelligent Earth Observation System that analyzes satellite imagery to detect vegetation, water bodies, and urban regions. It provides visual insights, environmental reports, and change detection capabilities through an interactive dashboard.
+GeoNova is an intelligent Earth Observation System that analyzes satellite imagery to detect vegetation, water bodies, and urban regions. It provides visual insights, environmental reports, and change detection capabilities through an interactive dashboard.
 
 ---
 
@@ -248,4 +248,4 @@ http://localhost:8000/docs
 
 Developed by Vibha
 
-GeoSense AI — Earth Observation Intelligence System
+GeoNova — Earth Observation Intelligence System
